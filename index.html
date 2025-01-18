@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botx</title>
+    <link rel="stylesheet" href="hello.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> -->
+
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Botx</h2>
+        </div>
+        <div id="chatbox" class="chatbox">
+            <div class="message bot-message">Hello! how can I assist you....?</div>
+        </div>
+        <div class="input-container">
+            <!-- Language Selector Dropdown -->
+            <select id="languageSelector" onchange="setLanguage(this.value)">
+                <option value="en-US">English</option>
+                <option value="hi-IN">Hindi</option>
+                <option value="kn-IN">Kannada</option>
+            </select>
+            <input type="text" id="userInput" placeholder="Type your message here..." autofocus>
+            <button id="sendBtn">Send</button>
+            <button id="voiceBtn">mic</button>
+        </div>
+    </div>
+    <script src="hello2.js"></script>
+</body>
+</html>
